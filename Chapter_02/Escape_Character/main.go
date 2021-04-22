@@ -7,5 +7,8 @@ func main() {
 	// fmt.Println("tom\tjack")
 
 	// escape character: \n
-	fmt.Println("tom\njack")
+	// fmt.Println("tom\njack")
+
+	// escape character: \\
+	fmt.Println("C:\\Users")
 }
