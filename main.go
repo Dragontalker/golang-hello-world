@@ -3,14 +3,11 @@ package main
 import "log"
 
 func main() {
-	myMap := make(map[string]string)
+	myMap := make(map[string]int)
 
-	myMap["dog"] = "Samson"
+	myMap["First"] = 1
+	myMap["Second"] = 2
 
-	myMap["other-dog"] = "Cassie"
-
-	myMap["dog"] = "Fido"
-
-	log.Println(myMap["dog"])
-	log.Println(myMap["other-dog"])
+	log.Println(myMap["First"])
+	log.Println(myMap["Second"])
 }
