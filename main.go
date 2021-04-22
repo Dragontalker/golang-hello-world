@@ -5,12 +5,11 @@ import (
 )
 
 func main() {
-	var isTrue bool
-	isTrue = true
+	cat := "cat"
 
-	if isTrue == true {
-		log.Println("isTrue is", isTrue)
+	if cat == "cat" {
+		log.Println("Cat is cat")
 	} else {
-		log.Println("isTrue is", isTrue)
+		log.Println("Cat is not cat")
 	}
 }
