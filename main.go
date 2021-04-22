@@ -5,9 +5,13 @@ import (
 )
 
 func main() {
-	mySlice := []string{"dog", "cat", "horse", "fish", "banana"}
+	myMap := make(map[string]string)
 
-	for _, x := range mySlice {
-		log.Println(x)
+	myMap["dog"] = "dog"
+	myMap["fish"] = "fish"
+	myMap["hat"] = "hat"
+
+	for i, x := range myMap {
+		log.Println(i, x)
 	}
 }
