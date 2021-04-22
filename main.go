@@ -5,7 +5,9 @@ import (
 )
 
 func main() {
-	for i := 0; i < 10; i++ {
-		log.Println(i)
+	mySlice := []string{"dog", "cat", "horse", "fish", "banana"}
+
+	for _, x := range mySlice {
+		log.Println(x)
 	}
 }
