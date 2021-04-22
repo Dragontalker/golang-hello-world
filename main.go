@@ -2,17 +2,10 @@ package main
 
 import (
 	"log"
-	"sort"
 )
 
 func main() {
-	var mySlice []int
+	numbers := []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
 
-	mySlice = append(mySlice, 3)
-	mySlice = append(mySlice, 1)
-	mySlice = append(mySlice, 2)
-
-	sort.Ints(mySlice)
-
-	log.Println(mySlice)
+	log.Println(numbers[0:2])
 }
