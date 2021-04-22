@@ -13,5 +13,8 @@ func main() {
 	// fmt.Println("C:\\Users")
 
 	// escape character: \"
-	fmt.Println("tom said \"jack\"")
+	// fmt.Println("tom said \"jack\"")
+
+	// escape character: \r
+	fmt.Println("tomtomtom\rjack")
 }
