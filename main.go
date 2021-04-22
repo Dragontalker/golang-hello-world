@@ -1,8 +1,16 @@
 package main
 
-import "log"
+import (
+	"log"	"time"
+)
 
-var s = "seven"
+type User struct {
+	firstName string
+	lastName string
+	phoneNUmber string
+	age int
+	birthDate time.Time
+}
 
 func main() {
 	var s2 = "six"
