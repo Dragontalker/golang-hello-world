@@ -5,7 +5,7 @@ import (
 )
 
 func main() {
-	myVar := "cat"
+	myVar := "xxx"
 
 	switch myVar {
 
@@ -17,5 +17,8 @@ func main() {
 
 	case "fish":
 		log.Println("cat is set to fish")
+
+	default:
+		log.Println("cat is something else")
 	}
 }
