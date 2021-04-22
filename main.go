@@ -3,13 +3,9 @@ package main
 import "log"
 
 func main() {
-	var myString string
-	var myInt int
+	myMap := make(map[string]string)
 
-	myString = "Hi"
-	myInt = 11
+	myMap["dog"] = "Samson"
 
-	mySecondString := "another string"
-
-	log.Println(myString, mySecondString, myInt)
+	log.Println(myMap["dog"])
 }
