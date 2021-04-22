@@ -1,12 +1,18 @@
 package main
 
-import "log"
+import (
+	"log"
+	"sort"
+)
 
 func main() {
-	var mySlice []string
+	var mySlice []int
 
-	mySlice = append(mySlice, "Richard")
-	mySlice = append(mySlice, "John")
+	mySlice = append(mySlice, 3)
+	mySlice = append(mySlice, 1)
+	mySlice = append(mySlice, 2)
+
+	sort.Ints(mySlice)
 
 	log.Println(mySlice)
 }
