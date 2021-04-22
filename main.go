@@ -3,21 +3,17 @@ package main
 import "log"
 
 func main() {
-	var whatToSay string
-	var saySomethingElse string
-	var i int
+	var myString string
+	myString = "Green"
 
-	whatToSay, _ = saySomething("Hello, world!")
-	log.Println(whatToSay)
+	log.Println("myString is set to ", myString)
+	changeUsingPointer(&myString)
 
-	saySomethingElse, _ = saySomething("Goodbye, world!")
-	log.Println(saySomethingElse)
-
-	i = 7
-	i = 8
-	log.Println(i)
+	log.Println("after func call myString is set to ", myString)
 }
 
-func saySomething(s string) (string, string) {
-	return s, "World"
+func changeUsingPointer(s *string) {
+	log.Println("s is set to ", s)
+	newValue := "Red"
+	*s = newValue
 }
