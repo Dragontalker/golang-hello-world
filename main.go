@@ -3,7 +3,9 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println(saySomething("Hello, world!"))
+	var whatToSay string
+	whatToSay = saySomething("Hello, world!")
+	fmt.Println(whatToSay)
 }
 
 func saySomething(s string) string {
