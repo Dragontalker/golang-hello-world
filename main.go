@@ -5,7 +5,12 @@ import (
 )
 
 func main() {
-	names := []string{"one", "seven", "fish", "cat"}
+	var isTrue bool
+	isTrue = true
 
-	log.Println(names)
+	if isTrue {
+		log.Println("isTrue is", isTrue)
+	} else {
+		log.Println("isTrue is", isTrue)
+	}
 }
