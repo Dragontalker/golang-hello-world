@@ -4,14 +4,28 @@ import (
 	"log"
 )
 
+type User struct {
+	FirstName string
+	LastName  string
+}
+
 func main() {
-	myMap := make(map[string]string)
+	var mySlice []User
 
-	myMap["dog"] = "dog"
-	myMap["fish"] = "fish"
-	myMap["hat"] = "hat"
-
-	for i, x := range myMap {
-		log.Println(i, x)
+	u1 := User{
+		FirstName: "Richard",
+		LastName:  "Yang",
 	}
+
+	u2 := User{
+		FirstName: "Sam",
+	}
+
+	mySlice = append(mySlice, u1)
+	mySlice = append(mySlice, u2)
+
+	for i, x := range mySlice {
+		log.Println(i, x.LastName)
+	}
+
 }
