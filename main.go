@@ -17,5 +17,16 @@ type Gorilla struct {
 }
 
 func main() {
+	dog := Dog{
+		Name:  "Samson",
+		Breed: "German Shepherd",
+	}
+}
 
+func (d Dog) Says() string {
+	return "woof"
+}
+
+func (d Dog) NumberOfLegs() int {
+	return 4
 }
