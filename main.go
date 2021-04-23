@@ -25,6 +25,14 @@ func main() {
 	}
 
 	PrintInfo(dog)
+
+	gorilla := Gorilla{
+		Name:          "King Kong",
+		Color:         "Black",
+		NumberOfTeeth: 32,
+	}
+
+	PrintInfo(gorilla)
 }
 
 func (d Dog) Says() string {
@@ -33,6 +41,14 @@ func (d Dog) Says() string {
 
 func (d Dog) NumberOfLegs() int {
 	return 4
+}
+
+func (d Gorilla) Says() string {
+	return "AUUUU"
+}
+
+func (d Gorilla) NumberOfLegs() int {
+	return 2
 }
 
 func PrintInfo(a Animal) {
