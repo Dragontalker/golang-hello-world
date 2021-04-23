@@ -1,5 +1,7 @@
 package main
 
+import "log"
+
 type Animal interface {
 	Says() string
 	NumberOfLegs() int
@@ -21,6 +23,8 @@ func main() {
 		Name:  "Samson",
 		Breed: "German Shepherd",
 	}
+
+	PrintInfo(dog)
 }
 
 func (d Dog) Says() string {
@@ -29,4 +33,8 @@ func (d Dog) Says() string {
 
 func (d Dog) NumberOfLegs() int {
 	return 4
+}
+
+func PrintInfo(a Animal) {
+	log.Println("This animal says", a.Says(), "and has", a.NumberOfLegs(), "legs")
 }
