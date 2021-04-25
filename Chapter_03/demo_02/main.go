@@ -9,7 +9,7 @@ func main() {
 	// case 2: type inference
 	// var i = 10.11
 
-	// case 3: constant
+	// case 3: best practice
 	i := 10
 	fmt.Println("i =", i)
 }
